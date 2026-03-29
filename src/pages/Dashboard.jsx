@@ -1,4 +1,4 @@
-import Logo from "../components/logo";
+import Logo from "../components/Logo";
 import { useEffect, useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
