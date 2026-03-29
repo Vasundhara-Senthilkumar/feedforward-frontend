@@ -1,11 +1,9 @@
 import axios from "axios";
 
-// Base URL for all API calls
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_URL || "https://feedforward-backend-i62e.onrender.com/api",
 });
 
-// Automatically attach token to every request
 API.interceptors.request.use((req) => {
   const user = localStorage.getItem("user");
   if (user) {
