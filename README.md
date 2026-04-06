@@ -106,12 +106,6 @@ Food Routes:
 
 ---
 
-## 📸 Screenshots
-
-(Add screenshots of your UI here)
-
----
-
 ## 🎯 Future Enhancements
 
 * 📱 Mobile responsive design
