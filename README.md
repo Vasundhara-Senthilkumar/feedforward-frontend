@@ -1,16 +1,140 @@
-# React + Vite
+#  FeedForward — Food Waste Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FeedForward is a full-stack web application designed to reduce food waste by connecting food providers (restaurants, canteens, event organizers) with NGOs. It ensures surplus food reaches people in need instead of being wasted.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🔐 Secure user authentication (Register/Login)
+* 👤 Role-based access (Provider / NGO / Admin)
+* 🍽️ Providers can add and manage food listings
+* 📍 NGOs can browse and accept available food
+* 📊 Admin dashboard for monitoring system data
+* ⚡ Real-time updates and smooth UI experience
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Frontend:
+
+* React.js
+* Tailwind CSS
+* Axios
+* React Router
+
+Backend:
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+
+---
+
+## 📂 Project Structure
+
+feedforward/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   ├── context/
+│   │   └── api/
+│
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   ├── middleware/
+│   └── config/
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository
+
+git clone https://github.com/your-username/feedforward.git
+cd feedforward
+
+---
+
+2. Backend Setup
+
+cd backend
+npm install
+
+Create a .env file and add:
+
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/foodwaste
+JWT_SECRET=your_secret_key
+
+Run backend:
+
+npm run dev
+
+---
+
+3. Frontend Setup
+
+cd frontend
+npm install
+npm run dev
+
+---
+
+## 🌐 API Endpoints
+
+Auth Routes:
+
+* POST /api/auth/register
+* POST /api/auth/login
+* GET /api/auth/me
+
+Food Routes:
+
+* GET /api/food
+* POST /api/food
+* PUT /api/food/:id/accept
+* PUT /api/food/:id/complete
+* DELETE /api/food/:id
+
+---
+
+## 📸 Screenshots
+
+(Add screenshots of your UI here)
+
+---
+
+## 🎯 Future Enhancements
+
+* 📱 Mobile responsive design
+* 🗺️ Map integration for location tracking
+* 📦 Image upload for food listings
+* 🔔 Notification system
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit pull requests.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 💡 Author
+
+Vasundhara
+B.Tech IT Student
+Passionate about Web Development and Problem Solving
